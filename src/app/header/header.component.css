@@ -1,0 +1,15 @@
+
+.f{
+    color: black;
+    font-size: xx-large;
+    font-family: fantasy;
+    /* padding-top: 10px; */
+}
+.bg {
+    background-color:#f8b7b7 ;
+    height: 100vh;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
