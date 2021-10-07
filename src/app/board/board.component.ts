@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ShowdefectComponent } from '../showdefect/showdefect.component';
+// import { TestcaseComponent } from '../testcase/testcase.component';
+
 
 
 @Component({
@@ -19,7 +22,7 @@ export class BoardComponent implements OnInit {
   }
 
    openDialog() {
-    const dialogRef = this.dialog.open(BoardComponent);
+    const dialogRef = this.dialog.open(ShowdefectComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
@@ -35,6 +38,9 @@ export class BoardComponent implements OnInit {
   }
   board(){
     this.router.navigateByUrl('/board')
+  }
+  testcase(){
+    this.router.navigateByUrl('/testcase')
   }
   exit(){
     this.router.navigateByUrl('/home')

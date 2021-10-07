@@ -8,6 +8,9 @@ import { HomeproComponent } from './homepro/homepro.component';
 import { LoginComponent } from './login/login.component';
 import { MenubarComponent } from './menubar/menubar.component';
 import { RegisterComponent } from './register/register.component';
+import { RegistersComponent } from './registers/registers.component';
+import { TestcaseComponent } from './testcase/testcase.component';
+import { ShowdefectComponent } from './showdefect/showdefect.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -18,7 +21,10 @@ const routes: Routes = [
   {path: 'homepro', component: HomeproComponent},
   {path: 'createdefect', component: CreatedefectComponent},
   {path: 'board', component: BoardComponent},
-  {path: 'header', component: HeaderComponent}
+  {path: 'header', component: HeaderComponent},
+  {path: 'regis', component: RegistersComponent},
+  {path: 'testcase', component: TestcaseComponent},
+  {path: 'showdefect', component: ShowdefectComponent}
 ];
 
 @NgModule({

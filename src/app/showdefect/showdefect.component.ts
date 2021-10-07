@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./showdefect.component.css']
 })
 export class ShowdefectComponent implements OnInit {
+  model: any;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onFileSelected(event: any){
+    console.log(event);
   }
 
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Routes } from '@angular/router';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-register',
@@ -10,8 +11,8 @@ import { Routes } from '@angular/router';
 export class RegisterComponent implements OnInit {
 
   constructor(
-    // private router : Routes
-    // private routes : Routes,
+    private router : Router
+    
     // private http : HttpClient
   ) { }
 
@@ -19,7 +20,7 @@ export class RegisterComponent implements OnInit {
   }
 
   submit(){
-    // this.router.navigateByUrl('/login')
+    this.router.navigateByUrl('/login')
   }
 
 }

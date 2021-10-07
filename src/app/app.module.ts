@@ -12,11 +12,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatNativeDateModule } from '@angular/material/core';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatTableModule} from '@angular/material/table';
 
 import { FormsModule } from '@angular/forms';
 import { MenubarComponent } from './menubar/menubar.component';
@@ -31,6 +34,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ShowdefectComponent } from './showdefect/showdefect.component';
+import { TestcaseComponent } from './testcase/testcase.component';
 
 
 // const appRoutes: Routes = [];
@@ -48,6 +52,7 @@ import { ShowdefectComponent } from './showdefect/showdefect.component';
     HeaderComponent,
     RegistersComponent,
     ShowdefectComponent,
+    TestcaseComponent,
     
   ],
   imports: [
@@ -67,7 +72,10 @@ import { ShowdefectComponent } from './showdefect/showdefect.component';
     MatNativeDateModule,
     DragDropModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule,
+    MatBadgeModule,
+    MatTableModule
     
     
   ],

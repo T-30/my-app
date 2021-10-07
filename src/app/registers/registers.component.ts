@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registers',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistersComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private router : Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  homepro(){
+    this.router.navigateByUrl('/homepro')
+  }
+  create(){
+    this.router.navigateByUrl('/createdefect')
+  }
+  board(){
+    this.router.navigateByUrl('/board')
+  }
+  exit(){
+    this.router.navigateByUrl('/home')
   }
 
 }

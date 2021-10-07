@@ -7,18 +7,21 @@
     <!--Fontawesome CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--Bootsrap 4 CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--Icon styles-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- <link rel="stylesheet" type="text/scss" href="board.component.scss"> -->
+    <!-- Boxicon CND Link -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <body>
         <div class="bg" >  
             <mat-drawer-container class="bg" >
                 <mat-drawer #drawer mode="side" opened>
-                    <h1>Numtip</h1>
+                    <h1></h1>
                     <mat-list role="list" class="side-bar">
                         <!-- <button class="btn btn-primary"(click)="homepro()">Go somewhere</button> -->
-                        <a (click)="homepro()">
+                        <!-- <a (click)="homepro()">
                             <mat-list-item role="listitem">HOME</mat-list-item>
                         </a>
                         <a (click)="create()">
@@ -29,9 +32,71 @@
                         </a>
                         <a (click)="exit()">
                             <mat-list-item role="listitem">Exit</mat-list-item>
-                        </a>
+                        </a> -->
+                        <div class="sidesbar">
+                            <div class="sidesbar_details">
+                                <div class="sidesbar_job">
+                                    <li>
+                                        <a (click)="board()">
+                                            <i class='bx bx-bar-chart-alt-2' ></i>
+                                            <span class="links_sidesbar">board</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidesbar">
+                            <div class="sidesbar_details">
+                                <div class="sidesbar_job">
+                                    <li>
+                                        <a (click)="create()">
+                                            <i class='bx bx-pencil'></i>
+                                            <span class="links_sidesbar">create defect</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidesbar">
+                            <div class="sidesbar_details">
+                                <div class="sidesbar_job">
+                                    <li>
+                                        <a (click)="testcase()">
+                                            <i class='bx bxs-book-open' ></i>
+                                            <span class="links_sidesbar">testcase</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidesbar">
+                            <div class="sidesbar_details">
+                                <div class="sidesbar_job">
+                                    <li>
+                                        <a (click)="homepro()">
+                                            <i class='bx bx-pie-chart-alt-2' ></i>
+                                            <span class="links_sidesbar">chart</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+
                   
                     </mat-list>
+                        <div class="exit">
+                            <div class="exit_details">
+                                <div class="exit_ex">
+                                    <li>
+                                        <a (click)="exit()">
+                                            <i class='bx bx-exit' ></i>
+                                            <span class="links_exit">EXIT</span>
+                                        </a>
+                                    </li>
+                                </div>
+                                
+                            </div>
+                        </div>
                 </mat-drawer>
             
                 <mat-drawer-content>
@@ -72,7 +137,21 @@
 
                     </div>
 
-                    
+                    <!-- <div class="root">
+                        <div class="navbar brand">
+                            <div class="navbar item">
+                                <h1 class="app-name has-gradient-text">test</h1>
+                            </div>
+                        </div>
+
+                        <div class="board">
+                            <div class="board-bar">
+                                <p class="board-name">board name</p>
+                            </div>
+                            
+    
+                        </div>
+                    </div> -->
 
                     <div class="root">
                         <!-- <div class="navbar has-background-dark">
@@ -124,9 +203,18 @@
                                                 </div>
                                             
                                         </div>
-                                        <div class="task">
-                                            <button mat-button (click)="openDialog()">Open dialog</button>
-                                            agfdhgsfkjeotkrpt
+                                        <div class="card" (click)="openDialog()">
+                                            <div class="card-inner">
+                                                <div class="header">
+                                                <h2>Title</h2>
+                                                <h3>Sub-Head</h3>
+                                                </div>
+                                                <div class="content">
+                                                    <p>Content area</p>
+                                                </div>
+                                            </div>
+                                            <!-- <button mat-button >Open dialog</button> -->
+                                            <!-- agfdhgsfkjeotkrpt -->
                                         </div>
                                         
                                         
@@ -264,6 +352,7 @@
                                                 </div>
                                             </div>
                                         </mat-card>
+                                        
 
                                        
                                     </div>

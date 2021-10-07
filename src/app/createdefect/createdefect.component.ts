@@ -26,4 +26,22 @@ export class CreatedefectComponent implements OnInit {
     console.log(event);
   }
 
+  homepro(){
+    this.router.navigateByUrl('/homepro')
+  }
+  create(){
+    this.router.navigateByUrl('/createdefect')
+  }
+  board(){
+    this.router.navigateByUrl('/board')
+  }
+  testcase(){
+    this.router.navigateByUrl('/testcase')
+  }
+  exit(){
+    this.router.navigateByUrl('/home')
+  }
+
+
+
 }

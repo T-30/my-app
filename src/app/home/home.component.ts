@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DatalogService } from '../datalog.service';
 
 
 @Component({
@@ -12,8 +13,11 @@ export class HomeComponent implements OnInit {
   click : boolean = false;
 
   constructor(
-    private router : Router
-  ) { }
+    private router : Router,
+    private dataname : DatalogService
+  ) {
+    // console.log(dataname.user[0].name);
+   }
 
   ngOnInit(): void {
   }

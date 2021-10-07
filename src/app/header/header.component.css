@@ -1,15 +1,24 @@
-
-.f{
-    color: black;
-    font-size: xx-large;
-    font-family: fantasy;
-    /* padding-top: 10px; */
+.example-spacer {
+  flex: 1 1 auto;
 }
-.bg {
-    background-color:#f8b7b7 ;
-    height: 100vh;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.colorr{
+    background-color: #f8b7b7;
+}
+
+.colorr span{
+    font-size: xx-large;
+}
+
+.colorr i{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+/* height: 50px;
+    min-width: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+    text-align: center; */
+  }
+  .spa{
+      width: 80px;
   }

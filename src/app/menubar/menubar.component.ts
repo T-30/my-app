@@ -24,6 +24,9 @@ export class MenubarComponent implements OnInit {
   board(){
     this.router.navigateByUrl('/board')
   }
+  testcase(){
+    this.router.navigateByUrl('/testcase')
+  }
   exit(){
     this.router.navigateByUrl('/home')
   }
