@@ -35,7 +35,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ShowdefectComponent } from './showdefect/showdefect.component';
 import { TestcaseComponent } from './testcase/testcase.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 // const appRoutes: Routes = [];
 
@@ -75,7 +75,8 @@ import { TestcaseComponent } from './testcase/testcase.component';
     MatDialogModule,
     MatMenuModule,
     MatBadgeModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
     
     
   ],

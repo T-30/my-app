@@ -1,4 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DatalogService } from '../datalog.service';
@@ -17,8 +17,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private router : Router,
-    // private http : HttpClient,
-    private datauser : DatalogService
+    private datauser : DatalogService,
+    private http : HttpClient
   ) {
     // this.input={
     //   'username' : '',
@@ -50,6 +50,12 @@ export class LoginComponent implements OnInit {
       console.log('succeed'+JSON.stringify(this.datauser.user[0]));
       this.router.navigateByUrl('/home')
   }
+  logi(){
+    console.log('passs');
+    let request = this.http.get('http://localhost:4200/login');
+    console.log('next')
+  }
+  
 
   // public loginn() {
   //   if (this.input.email && this.input.password) {
